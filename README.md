@@ -66,6 +66,7 @@ cd calculadora-top
 
 
 💡 MELHORIAS FUTURAS
+
 Adicionar suporte a porcentagem %;
 Criar histórico de cálculos;
 Substituir o eval() por um parser mais seguro;
@@ -73,10 +74,12 @@ Adicionar sons e pequenas animações nos botões.
 
 
 👩‍💻 AUTORA
+
 Feito com 💙 por @dinhapreta
 📅 2025 — Projeto de aprendizado em front-end
 
 
 ⚖️ LICENÇA
+
 Este projeto está sob a Licença MIT.
 Sinta-se à vontade para estudar, modificar e compartilhar — com os devidos créditos ✨
