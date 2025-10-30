@@ -1,0 +1,377 @@
+/*
+  🌈 style.css — Calculadora Top
+  Feito com carinho 💙
+  - Tema escuro e claro
+  - Layout responsivo
+  - Comentários para aprender passo a passo
+*/
+
+/* ===== RESET BÁSICO ===== */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== VARIÁVEIS DE COR (TEMA ESCURO PADRÃO) ===== */
+:root {
+  --bg-color: #3b82f6;       /* Fundo em degradê */
+  --calc-bg: #0f172a;        /* Fundo da calculadora */
+  --btn-bg: #1e293b;         /* Botões padrão */
+  --btn-hover: #4f46e5;      /* Cor de hover dos botões */
+  --accent-color: #a5b4fc;   /* Lilás para destaques */
+  --header-bg: #111827;      /* Fundo do cabeçalho */
+}
+
+/* ===== TEMA CLARO ===== */
+body.light {
+  --bg-color: #c7d2fe;        /* Fundo azul claro */
+  --calc-bg: #ffffff;         /* Calculadora branca */
+  --btn-bg: #e2e8f0;          /* Botões cinza claro */
+  --btn-hover: #d1d5db;       /* Hover levemente escurecido */
+  --accent-color: #4f46e5;    /* Lilás consistente */
+  --header-bg: #e0e7ff;       /* Cabeçalho suave */
+}
+
+/* ===== ESTILO GERAL DO BODY ===== */
+body {
+  background: linear-gradient(135deg, var(--bg-color), var(--accent-color));
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.3s, color 0.3s;
+  padding-top: 80px; /* Espaço para o header fixo */
+}
+
+/* ===== HEADER FIXO ===== */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--header-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+/* Logo e título juntos à esquerda */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ===== LOGO ===== */
+.logo {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* ===== TÍTULO DO HEADER ===== */
+.header h1 {
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+/* ===== BOTÃO DE TEMA (SOL/LUA) ===== */
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--accent-color);
+  transition: transform 0.2s;
+}
+
+.theme-btn:hover {
+  transform: rotate(20deg);
+}
+
+/* ===== CALCULADORA ===== */
+.calculator {
+  background: var(--calc-bg);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  width: 320px;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+/* ===== TÍTULO DA CALCULADORA ===== */
+.calculator h2 {
+  color: var(--accent-color);
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.calculator h2 span {
+  font-size: 1.3rem;
+}
+
+/* ===== DISPLAY (VISOR) ===== */
+.display input {
+  width: 100%;
+  font-size: 2rem;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #1f2937;
+  color: #fff;
+}
+
+/* ===== GRADE DE BOTÕES ===== */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* ===== BOTÕES ===== */
+.btn {
+  background: var(--btn-bg);
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ===== HOVER DOS BOTÕES ===== */
+.btn:hover {
+  background: var(--btn-hover);
+}
+
+/* ===== BOTÕES ESPECIAIS ===== */
+.equal {
+  background: #10b981; /* Verde */
+  grid-row: span 2; /* Ocupa duas linhas */
+}
+
+.equal:hover {
+  background: #059669;
+}
+
+.clear {
+  background: #ef4444; /* Vermelho */
+}
+
+.clear:hover {
+  background: #dc2626;
+}
+
+.delete {
+  background: #f59e0b; /* Laranja */
+}
+
+.delete:hover {
+  background: #d97706;
+}
+
+/* ===== BOTÃO ZERO (MAIOR) ===== */
+.zero {
+  grid-column: span 2; /* Ocupa duas colunas */
+}
+
+/* ===== AJUSTES DE TEMA CLARO ===== */
+body.light .calculator h2,
+body.light .header h1 {
+  color: #111827; /* Texto escuro e legível */
+}
+
+body.light .display input {
+  background: #1f2937; /* Mantém o visor escuro */
+  color: #ffffff;
+}
+
+body.light .btn {
+  color: #111827; /* Texto escuro nos botões */
+}
+
+/* Mantém cores fortes dos botões coloridos */
+body.light .equal {
+  background: #10b981;
+}
+
+body.light .equal:hover {
+  background: #059669;
+}
+
+body.light .clear {
+  background: #ef4444;
+}
+
+body.light .clear:hover {
+  background: #dc2626;
+}
+
+body.light .delete {
+  background: #f59e0b;
+}
+
+body.light .delete:hover {
+  background: #d97706;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 480px) {
+  /* Corpo com padding maior para o header */
+  body {
+    padding-top: 100px;
+  }
+
+  /* Calculadora ocupa quase toda a tela */
+  .calculator {
+    width: 90%;
+    padding: 15px;
+  }
+
+  /* Visor menor */
+  .display input {
+    font-size: 1.8rem;
+  }
+
+  /* Botões maiores e mais espaçados */
+  .btn {
+    padding: 20px;
+    font-size: 1.4rem;
+  }
+
+  /* Título e botão do header menores */
+  .header h1 {
+    font-size: 1.2rem;
+  }
+
+  .theme-btn {
+    font-size: 1.3rem;
+  }
+}
+
+/* ===== RODAPÉ ESTILOSO ===== */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(17, 24, 39, 0.6); /* Fundo translúcido escuro */
+  backdrop-filter: blur(10px);        /* Efeito vidro */
+  color: var(--accent-color);
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s, color 0.3s;
+}
+
+/*  TEMA CLARO */
+body.light .footer {
+  background: rgba(224, 231, 255, 0.6);
+  color: #111827;
+}
+
+/*  LINK DO GITHUB  */
+.footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit; /* usa a cor do texto */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/*  ÍCONE DO GITHUB  */
+.github-icon {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1); /* deixa branco no tema escuro */
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Tema claro → ícone preto */
+body.light .github-icon {
+  filter: none;
+}
+
+/*  ANIMAÇÕES AO PASSAR O MOUSE */
+.footer a:hover {
+  color: #38bdf8;
+  transform: scale(1.05);
+}
+
+.footer a:hover .github-icon {
+  transform: rotate(15deg);
+}
+
+/*  RESPONSIVIDADE  */
+@media (max-width: 480px) {
+  .footer {
+    font-size: 0.8rem;
+    padding: 10px 5px;
+  }
+
+  .github-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* ===== MENSAGEM DINÂMICA (com fade e responsiva) ===== */
+.greeting {
+  font-size: 0.85rem;          /* Um pouco menor que o texto do rodapé */
+  margin-top: 4px;             /* Espaço entre o copyright */
+  opacity: 0;                  /* Começa invisível */
+  animation: fadeIn 1.2s ease forwards; /* Animação de entrada suave */
+  transition: color 0.3s;      /* Troca suave de cor ao mudar o tema */
+}
+
+/* Animação para aparecer suavemente */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px); /* Sobe levemente */
+  }
+  to {
+    opacity: 0.9;
+    transform: translateY(0);
+  }
+}
+
+/* Tema claro → texto escuro */
+body.light .greeting {
+  color: #111827;
+}
+
+/* Tema escuro → usa cor do tema */
+body:not(.light) .greeting {
+  color: var(--accent-color);
+}
+
+/* Responsividade (ajusta fonte e espaço em telas pequenas) */
+@media (max-width: 480px) {
+  .greeting {
+    font-size: 0.75rem;
+    margin-top: 2px;
+  }
+}
+
+
+

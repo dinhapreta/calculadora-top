@@ -1,0 +1,94 @@
+<!--
+  Calculadora Top 💙
+  Estrutura básica em HTML
+  Criada para aprender front-end do zero, separando HTML, CSS e JS.
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Top</title>
+
+    <!-- conecta o CSS (Cascading Style Sheets) externo -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!--Cabeçalho fixo no topo-->
+   <header class="header">
+    <!-- Parte esquerda: logo + título -->
+    <div class="header-left">
+   <img src="file:///C:/Users/apare/OneDrive/ChatGPT%20Image%2027%20de%20jun.%20de%202025,%2001_15_39.png" 
+   alt="Logo Calculadora" 
+   class="logo" 
+   />
+    <h1>Calculadora Top</h1>
+    </div>
+
+    <!-- Botão para alternar tema claro/escurov-->
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+   </header>
+   
+   
+   <!--Área principal da calculadora-->
+    <div class="calculator">
+        <h2> Calculadora 📱</h2>
+
+        <!--Campo que mostra os números e resultados -->
+        <div class="display">
+        <input type="text" id="display" readonly />
+    </div>
+
+    <!-- Grade de botões -->
+    <div class="buttons">
+<!-- Primeira Linha -->
+ <button class="btn clear">C</button>
+ <button class="btn">/</button>
+ <button class="btn">*</button>
+ <button class="btn delete">⌫</button>
+
+ <!-- Segunda Linha -->
+  <button class="btn">7</button>
+  <button class="btn">8</button>
+  <button class="btn">9</button>
+  <button class="btn">-</button>
+
+  <!-- Terceira linha-->
+  <button class="btn">4</button>
+  <button class="btn">5</button>
+  <button class="btn">6</button>
+  <button class="btn">+</button>
+
+  <!-- Quarta Linha -->
+   <button class="btn">1</button>
+   <button class="btn">2</button>
+   <button class="btn">3</button>
+   <button class="btn equal">=</button>
+
+   <!-- Última Linha -->
+<button class="btn zero">0</button>
+<button class="btn">.</button>
+    </div>
+    </div>
+
+    <!-- ====== RODAPÉ ====== -->
+  <footer class="footer">
+  <p>
+    © <span id="year"></span> — Feito com 💙 por 
+    <a href="https://github.com/dinhapreta" target="_blank" class="github-link">
+      <img 
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" 
+        alt="GitHub Logo" 
+        class="github-icon" 
+      />
+      @dinhapreta
+    </a>
+  </p>
+  <p id="greeting" class="greeting"></p>
+</footer>
+
+
+    <!-- conecta o JavaScript externo -->
+     <script src="script.js"></script>
+</body>
+</html>
