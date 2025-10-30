@@ -57,27 +57,26 @@ calculadora-top/
    ```bash
    git clone https://github.com/dinhapreta/calculadora-top.git
 
-2. Entre na pasta:
+2. **Entre na pasta:**
+
 cd calculadora-top
 
-3. Abra o arquivo index.html no navegador e pronto.🎉
 
-💡 Melhorias futuras
+3. **Abra o arquivo index.html no navegador e pronto.🎉**
 
-Adicionar suporte a porcentagem %
 
-Criar histórico de cálculos
+💡 MELHORIAS FUTURAS
+Adicionar suporte a porcentagem %;
+Criar histórico de cálculos;
+Substituir o eval() por um parser mais seguro;
+Adicionar sons e pequenas animações nos botões.
 
-Substituir o eval() por um parser mais seguro
 
-Adicionar sons e pequenas animações nos botões
-
-👩‍💻 Autora
-
+👩‍💻 AUTORA
 Feito com 💙 por @dinhapreta
 📅 2025 — Projeto de aprendizado em front-end
 
-⚖️ Licença
 
+⚖️ LICENÇA
 Este projeto está sob a Licença MIT.
 Sinta-se à vontade para estudar, modificar e compartilhar — com os devidos créditos ✨
