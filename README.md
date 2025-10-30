@@ -32,14 +32,14 @@ Uma calculadora moderna e estilosa feita com **HTML**, **CSS** e **JavaScript**,
 
 ## 🗂 Estrutura do projeto
 
-calculadora-top/
-│
-├─ index.html → Estrutura principal
-├─ style.css → Estilos e temas (claro/escuro)
-├─ script.js → Lógica da calculadora
-├─ LICENSE → Licença MIT
-└─ README.md → Este arquivo ✨
-
+```
+📦 calculadora-top/
+├── 🧩 index.html → Estrutura principal
+├── 🎨 style.css → Estilos e temas (claro/escuro)
+├── ⚙️ script.js → Lógica da calculadora
+├── 📜 LICENSE → Licença MIT
+└── 🪶 README.md → Este arquivo
+```
 
 ---
 
@@ -64,6 +64,7 @@ cd calculadora-top
 
 3. **Abra o arquivo index.html no navegador e pronto.🎉**
 
+---
 
 💡 MELHORIAS FUTURAS
 
@@ -72,12 +73,14 @@ Criar histórico de cálculos;
 Substituir o eval() por um parser mais seguro;
 Adicionar sons e pequenas animações nos botões.
 
+---
 
 👩‍💻 AUTORA
 
 Feito com 💙 por @dinhapreta
 📅 2025 — Projeto de aprendizado em front-end
 
+---
 
 ⚖️ LICENÇA
 
