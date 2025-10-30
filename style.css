@@ -375,3 +375,20 @@ body:not(.light) .greeting {
 
 
 
+/*
+💙 Explicação rápida (CSS):
+As variáveis (--nome) facilitam mudar as cores do tema.
+- O modo claro usa body.light para substituir cores.
+- O botão 🌙 alterna essa classe via JavaScript.
+- O bloco @media (max-width: 480px) adapta tudo para celular.
+- Transições suaves deixam o visual agradável.
+
+💡 Dicas pra você aprender (RODAPÉ/FOOTER):
+- Fica fixo no final da tela (position: fixed; bottom: 0;)
+- Usa efeito glassmorphism (vidro translúcido com desfoque)
+- Muda de cor conforme o tema
+- Exibe seu GitHub com o ícone animado 🐙
+- O link do GitHub abre em nova aba (target="_blank") e muda de cor ao passar o mouse.
+- Totalmente responsivo para celular
+- Sombras suaves e animações ao passar o mouse
+*/
