@@ -1,9 +1,9 @@
 /*
   🌈 style.css — Calculadora Top
   Feito com carinho 💙
+  - Mantém comentários originais
   - Tema escuro e claro
   - Layout responsivo
-  - Comentários para aprender passo a passo
 */
 
 /* ===== RESET BÁSICO ===== */
@@ -14,24 +14,24 @@
   padding: 0;
 }
 
-/* ===== VARIÁVEIS DE COR (TEMA ESCURO PADRÃO) ===== */
+/* ===== VARIÁVEIS DE COR ===== */
 :root {
-  --bg-color: #3b82f6;       /* Fundo em degradê */
-  --calc-bg: #0f172a;        /* Fundo da calculadora */
-  --btn-bg: #1e293b;         /* Botões padrão */
-  --btn-hover: #4f46e5;      /* Cor de hover dos botões */
-  --accent-color: #a5b4fc;   /* Lilás para destaques */
-  --header-bg: #111827;      /* Fundo do cabeçalho */
+  --bg-color: #3b82f6;
+  --calc-bg: #0f172a;
+  --btn-bg: #1e293b;
+  --btn-hover: #4f46e5;
+  --accent-color: #a5b4fc;
+  --header-bg: #111827;
 }
 
 /* ===== TEMA CLARO ===== */
 body.light {
-  --bg-color: #c7d2fe;        /* Fundo azul claro */
-  --calc-bg: #ffffff;         /* Calculadora branca */
-  --btn-bg: #e2e8f0;          /* Botões cinza claro */
-  --btn-hover: #d1d5db;       /* Hover levemente escurecido */
-  --accent-color: #4f46e5;    /* Lilás consistente */
-  --header-bg: #e0e7ff;       /* Cabeçalho suave */
+  --bg-color: #c7d2fe;
+  --calc-bg: #ffffff;
+  --btn-bg: #e2e8f0;
+  --btn-hover: #d1d5db;
+  --accent-color: #4f46e5;
+  --header-bg: #e0e7ff;
 }
 
 /* ===== ESTILO GERAL DO BODY ===== */
@@ -43,7 +43,7 @@ body {
   align-items: center;
   height: 100vh;
   transition: background 0.3s, color 0.3s;
-  padding-top: 80px; /* Espaço para o header fixo */
+  padding-top: 80px;
 }
 
 /* ===== HEADER FIXO ===== */
@@ -98,16 +98,18 @@ body {
 .theme-btn:hover {
   transform: rotate(20deg);
 }
-
 /* ===== CALCULADORA ===== */
 .calculator {
   background: var(--calc-bg);
-  padding: 20px;
+  padding: 25px 20px;
   border-radius: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  width: 320px;
+  width: 360px; /* ligeiramente mais larga */
   text-align: center;
   transition: background 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ===== TÍTULO DA CALCULADORA ===== */
@@ -122,24 +124,41 @@ body {
   font-size: 1.3rem;
 }
 
-/* ===== DISPLAY (VISOR) ===== */
+/* ===== DISPLAY ===== */
+.display {
+  width: 100%;
+}
+
 .display input {
   width: 100%;
   font-size: 2rem;
   text-align: right;
-  padding: 10px;
+  padding: 12px 10px;
   border: none;
   border-radius: 10px;
   background: #1f2937;
   color: #fff;
+  margin-bottom: 10px;
 }
+
+/* ===== HISTÓRICO ===== */
+.display-history {
+  list-style: none;
+  padding-left: 5px;
+  margin-top: 5px;
+  font-size: 0.8rem;
+  max-height: 100px;
+  overflow-y: auto;
+  color: #a5b4fc;
+}
+.display-history li { margin-bottom: 3px; }
 
 /* ===== GRADE DE BOTÕES ===== */
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
-  gap: 10px;
-  margin-top: 15px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px; /* menos espaço entre botões */
+  width: 100%;
 }
 
 /* ===== BOTÕES ===== */
@@ -153,8 +172,12 @@ body {
   cursor: pointer;
   transition: 0.2s;
 }
-
 /* ===== HOVER DOS BOTÕES ===== */
+.btn:hover {
+  background: var(--btn-hover);
+}
+
+/* ===== BOTÕES ESPECIAIS ===== */
 .btn:hover {
   background: var(--btn-hover);
 }
@@ -162,7 +185,7 @@ body {
 /* ===== BOTÕES ESPECIAIS ===== */
 .equal {
   background: #10b981; /* Verde */
-  grid-row: span 2; /* Ocupa duas linhas */
+  grid-row: span 1; /* Ocupa duas linhas */
 }
 
 .equal:hover {
@@ -187,8 +210,9 @@ body {
 
 /* ===== BOTÃO ZERO (MAIOR) ===== */
 .zero {
-  grid-column: span 2; /* Ocupa duas colunas */
+  grid-column: span 1; /* Ocupa duas colunas */
 }
+
 
 /* ===== AJUSTES DE TEMA CLARO ===== */
 body.light .calculator h2,
