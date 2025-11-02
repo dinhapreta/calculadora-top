@@ -1,7 +1,6 @@
 <!--
   Calculadora Top 💙
-  Estrutura básica em HTML
-  Criada para aprender front-end do zero, separando HTML, CSS e JS.
+  Estrutura completa pronta para uso
 -->
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -10,66 +9,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Top</title>
 
-    <!-- conecta o CSS (Cascading Style Sheets) externo -->
+    <!-- conecta o CSS externo -->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!--Cabeçalho fixo no topo-->
+    <!-- Cabeçalho fixo -->
    <header class="header">
-    <!-- Parte esquerda: logo + título -->
     <div class="header-left">
-   <img src="https://images.unsplash.com/photo-1668930185267-1f3c19851b5b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhbGN1bGFkb3JhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" 
-   alt="Logo Calculadora" 
-   class="logo" 
-   />
-    <h1>Calculadora Top</h1>
+        <img src="https://images.unsplash.com/photo-1668930185267-1f3c19851b5b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhbGN1bGFkb3JhfGVufDB8fDB8fHww&auto=format&fit=crop&q=60&w=600" 
+        alt="Logo Calculadora" class="logo" />
+        <h1>Calculadora Top</h1>
     </div>
 
-    <!-- Botão para alternar tema claro/escurov-->
+    <!-- Botão tema -->
     <button id="theme-toggle" class="theme-btn">🌙</button>
    </header>
    
-   
-   <!--Área principal da calculadora-->
-    <div class="calculator">
+   <!-- Calculadora -->
+   <div class="calculator">
         <h2> Calculadora </h2>
 
-        <!--Campo que mostra os números e resultados -->
+        <!-- Display -->
         <div class="display">
-        <input type="text" id="display" readonly />
-    </div>
+            <input type="text" id="display" readonly />
+            <ul id="history-list" class="display-history"></ul>
+        </div>
 
-    <!-- Grade de botões -->
-    <div class="buttons">
-<!-- Primeira Linha -->
- <button class="btn clear">C</button>
- <button class="btn">/</button>
- <button class="btn">*</button>
- <button class="btn delete">⌫</button>
+        <!-- Botões -->
+        <div class="buttons">
+            <!-- Linha 1 -->
+            <button class="btn clear">C</button>
+            <button class="btn">/</button>
+            <button class="btn">*</button>
+            <button class="btn delete">⌫</button>
+            <button class="btn">%</button>
 
- <!-- Segunda Linha -->
-  <button class="btn">7</button>
-  <button class="btn">8</button>
-  <button class="btn">9</button>
-  <button class="btn">-</button>
+            <!-- Linha 2 -->
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">-</button>
+            <button class="btn">√</button>
 
-  <!-- Terceira linha-->
-  <button class="btn">4</button>
-  <button class="btn">5</button>
-  <button class="btn">6</button>
-  <button class="btn">+</button>
+            <!-- Linha 3 -->
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">+</button>
+            <button class="btn">x²</button>
 
-  <!-- Quarta Linha -->
-   <button class="btn">1</button>
-   <button class="btn">2</button>
-   <button class="btn">3</button>
-   <button class="btn equal">=</button>
+            <!-- Linha 4 -->
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn equal">=</button>
+            <button class="btn">^</button>
 
-   <!-- Última Linha -->
-<button class="btn zero">0</button>
-<button class="btn">.</button>
-    </div>
-    </div>
+            <!-- Linha 5 -->
+            <button class="btn zero">0</button>
+            <button class="btn">.</button>
+            <button class="btn">(</button>
+            <button class="btn">)</button>
+            <button class="btn">+/-</button>
+        </div>
+   </div>
 
     <!-- ====== RODAPÉ ====== -->
   <footer class="footer">
@@ -87,8 +90,7 @@
   <p id="greeting" class="greeting"></p>
 </footer>
 
-
     <!-- conecta o JavaScript externo -->
-     <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

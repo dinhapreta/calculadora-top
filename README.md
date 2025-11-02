@@ -1,3 +1,13 @@
+<div align="center">
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Status](https://img.shields.io/badge/📁%20Somente_Leitura-grey?style=for-the-badge&logo=lock&logoColor=white)
+![Made with 💙](https://img.shields.io/badge/Made%20with-%F0%9F%92%99-blue?style=for-the-badge)
+
+</div>
+
 # 💙 Calculadora Top
 
 Uma calculadora moderna e estilosa feita com **HTML**, **CSS** e **JavaScript**, criada para praticar conceitos de front-end do zero — com tema claro/escuro, suporte ao teclado e uma interface responsiva.
@@ -10,11 +20,12 @@ Uma calculadora moderna e estilosa feita com **HTML**, **CSS** e **JavaScript**,
 ## ✨ Funcionalidades
 
 - 🧮 **Operações básicas:** adição, subtração, multiplicação e divisão  
-- ⌨️ **Suporte a teclado e mouse**  
+- ⌨️ **Suporte total ao teclado e mouse**  
 - 🌙 **Tema escuro** e ☀️ **tema claro**, salvos automaticamente no navegador  
 - 💬 **Mensagem personalizada** conforme o horário do dia  
 - 🕓 **Ano atualizado automaticamente** no rodapé  
-- 📱 **Design responsivo** (funciona bem em computadores e celulares)
+- 📱 **Design responsivo**, adaptável a qualquer dispositivo  
+- 🧾 **Histórico de cálculos**, exibindo as expressões como digitadas  
 
 ---
 
@@ -23,14 +34,17 @@ Uma calculadora moderna e estilosa feita com **HTML**, **CSS** e **JavaScript**,
 | Tecla | Função |
 |:------|:--------|
 | `0–9` | Números |
-| `+ - * / .` | Operações |
+| `+ - * / .` | Operações básicas |
 | `Enter` | Calcula o resultado |
 | `Backspace` | Apaga o último caractere |
 | `C` | Limpa tudo |
+| `%` | Insere porcentagem |
 
 ---
 
 ## 🗂 Estrutura do projeto
+
+
 
 ```
 📦 calculadora-top/
@@ -62,27 +76,32 @@ Uma calculadora moderna e estilosa feita com **HTML**, **CSS** e **JavaScript**,
 cd calculadora-top
 
 
-3. **Abra o arquivo index.html no navegador e pronto.🎉**
+3. **Abra o arquivo no navegador:**
+
+index.html
+
+🎉 Pronto! A Calculadora Top estará rodando localmente.
 
 ---
 
-💡 MELHORIAS FUTURAS
+🚧 **Melhorias Futuras**
 
-Adicionar suporte a porcentagem %;
-Criar histórico de cálculos;
-Substituir o eval() por um parser mais seguro;
-Adicionar sons e pequenas animações nos botões.
+🧮 Adicionar suporte à raiz cúbica (∛)
+
+🔊 Inserir sons sutis e feedback visual nos botões
+
+🪄 Substituir o eval() por um parser de expressões seguro
+
+💾 Adicionar opção para salvar histórico localmente
+
+🧩 Implementar modo científico com mais funções matemáticas
 
 ---
 
-👩‍💻 AUTORA
+👩‍💻 **AUTORA**
 
 Feito com 💙 por @dinhapreta
 📅 2025 — Projeto de aprendizado em front-end
 
 ---
 
-⚖️ LICENÇA
-
-Este projeto está sob a Licença MIT.
-Sinta-se à vontade para estudar, modificar e compartilhar — com os devidos créditos ✨
