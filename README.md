@@ -1,16 +1,15 @@
-<div align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Status](https://img.shields.io/badge/📁%20Somente_Leitura-grey?style=for-the-badge&logo=lock&logoColor=white)
-![Made with 💙](https://img.shields.io/badge/Made%20with-%F0%9F%92%99-blue?style=for-the-badge)
-
-</div>
 
 # 💙 Calculadora Top
 
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+
+
 Uma calculadora moderna e estilosa feita com **HTML**, **CSS** e **JavaScript**, criada para praticar conceitos de front-end do zero — com tema claro/escuro, suporte ao teclado e uma interface responsiva.
+
+---
 
 🔗 **Acesse online:**  
 👉 [https://dinhapreta.github.io/calculadora-top/](https://dinhapreta.github.io/calculadora-top/)
@@ -51,7 +50,6 @@ Uma calculadora moderna e estilosa feita com **HTML**, **CSS** e **JavaScript**,
 ├── 🧩 index.html → Estrutura principal
 ├── 🎨 style.css → Estilos e temas (claro/escuro)
 ├── ⚙️ script.js → Lógica da calculadora
-├── 📜 LICENSE → Licença MIT
 └── 🪶 README.md → Este arquivo
 ```
 
